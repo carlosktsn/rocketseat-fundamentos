@@ -7,6 +7,7 @@ body {
     font-family: 'Alice', serif;
     background-image: url(img/bg-image.jpg);
     background-size: cover;
+    color: #573A37;
 }
 
 #page {
@@ -45,11 +46,20 @@ h1+h2{
 }
 
 p {
-    color: #573A37;
     font-size: 16px;
     line-height: 150%;
 }
 
 ul {
     padding-left: 24px;
+}
+
+footer {
+    color: #F0E8C2;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+footer img{
+    vertical-align: middle;
 }
