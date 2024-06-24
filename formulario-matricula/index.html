@@ -12,11 +12,66 @@
 <body>
     <div id="app">
         <main>
-            <div class="main-container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto ea, minima consectetur facere odit saepe iusto dicta quisquam fugit nobis odio, reiciendis aut illo impedit? Nostrum adipisci odio suscipit placeat!</div>
+            <div class="main-container">
+                <header>
+                    <div class="back">
+                        <img src="assets/icons/arrow-left-02.svg" alt="">
+                        <span>Voltar</span>
+                    </div>
+                    <h1>Formulário de matrícula</h1>
+                    <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã</p>
+                </header>
+                <form action="submit">
+                    <h2>Informações da criança</h2>
+
+                    <label for="name">Nome completo</label>
+                    <input type="text" name="name">
+
+                    <label for="birthDate">Data de nascimento</label>
+                    <input type="date" name="birthDate">
+
+                    <label for="gender">Sexo</label>
+                    <select name="gender">
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+
+                    <label for="medicalInfo">Informações médicas</label>
+                    <textarea name="medicalInfo" id="" cols="30" rows="10"></textarea>
+
+                    <label for="birthCert">Certidão de nascimento</label>
+                    <input type="file" name="birthCert">
+
+                    <h2>Endereço residencial</h2>
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep">
+
+                    <div>
+                        <label for="street">Rua</label>
+                        <input type="text" name="street" disabled>
+                        <label for="number">Número</label>
+                        <input type="text" name="number">
+                    </div>
+
+                    <div>
+                        <label for="city">Cidade</label>
+                        <input type="text" name="city" disabled>
+                        <label for="Estado">Estado</label>
+                        <input type="text" name="Estado" disabled>
+                    </div>
+                </form>
+            </div>
         </main>
 
         <aside>
-            <div class="aside-container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus in neque vitae deleniti, delectus sapiente cum porro, aut odio ducimus tenetur repudiandae nobis! Maxime quia odit corporis iste. Voluptatibus, officia.</div>
+            <div class="aside-container">
+                <header>
+                    <img src="assets/Logo.svg" alt="">
+                    <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
+                    <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante</p>
+                </header>
+                    <img src="assets/Illustration.svg" alt="">
+            </div>
         </aside>
     </div>
 </body>
