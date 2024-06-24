@@ -21,44 +21,43 @@
                     <h1>Formulário de matrícula</h1>
                     <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã</p>
                 </header>
-                <form action="submit">
-                    <h2>Informações da criança</h2>
+                <form enctype="multipart/form-data" method="post">
+                    <fieldset class="child-info">
 
-                    <label for="name">Nome completo</label>
-                    <input type="text" name="name">
+                        <legend>Informações da criança</legend>
+                        
+                        <div class="input-wrapper">    
+                            <label for="fullname">Nome completo</label>
+                            <input type="text" id="fullname" name="fullname">
+                        </div>
+                        
+                        <div class="input-wrapper">
+                        <label for="birth">Data de nascimento</label>
+                        <input type="date" id="birth" name="birth">
+                        </div>
+                        
+                        <div class="select-wrapper">
+                        <label for="gender">Sexo</label>
+                        <select id="gender" name="gender">
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                        </select>
+                        </div>
 
-                    <label for="birthDate">Data de nascimento</label>
-                    <input type="date" name="birthDate">
+                        <div class="textarea-wrapper">
+                        <label for="medical-info">Informações médicas</label>
+                        <textarea id="medical-info" name="medical-info" cols="30" rows="10"></textarea>
+                        </div>
 
-                    <label for="gender">Sexo</label>
-                    <select name="gender">
-                        <option value="M">Masculino</option>
-                        <option value="F">Feminino</option>
-                    </select>
-
-                    <label for="medicalInfo">Informações médicas</label>
-                    <textarea name="medicalInfo" id="" cols="30" rows="10"></textarea>
-
-                    <label for="birthCert">Certidão de nascimento</label>
-                    <input type="file" name="birthCert">
-
-                    <h2>Endereço residencial</h2>
-                    <label for="cep">CEP</label>
-                    <input type="text" name="cep">
-
-                    <div>
-                        <label for="street">Rua</label>
-                        <input type="text" name="street" disabled>
-                        <label for="number">Número</label>
-                        <input type="text" name="number">
-                    </div>
-
-                    <div>
-                        <label for="city">Cidade</label>
-                        <input type="text" name="city" disabled>
-                        <label for="Estado">Estado</label>
-                        <input type="text" name="Estado" disabled>
-                    </div>
+                        <div class="droparea-wrapper">
+                        <input type="file" id="birth-file" name="birth-file">
+                        <img src="assets/icons/cloud-upload.svg" alt="">
+                        <p>
+                            Clique aqui para <br>
+                            selecionar os arquivos
+                        </p>
+                        </div>
+                    </fieldset>
                 </form>
             </div>
         </main>
